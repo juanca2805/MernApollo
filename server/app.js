@@ -7,6 +7,7 @@ import cors from "cors";
 export async function startApolloServer(typeDefs, resolvers) {
   const app = express();
   const httpServer = http.createServer(app);
+app.get('/',(req, res) => res.send('Welcome to my page'))
   const server = new ApolloServer({
     typeDefs,
     resolvers,
