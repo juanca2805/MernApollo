@@ -1,0 +1,10 @@
+mutation {
+createProject(
+  name: "mi primer proyecto",
+  description: "este es mi primer proyecto"
+){
+  _id
+  name
+  description
+} 
+}
